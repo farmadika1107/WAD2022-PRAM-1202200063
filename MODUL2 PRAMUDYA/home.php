@@ -47,7 +47,7 @@
                     </p>
                </div>
                     <div class="card-footer d-flex justify-content-center">
-                         <a class="btn btn-primary" href="Booking.php?car=Toyota Ford">Book Now</a>
+                         <a class="btn btn-primary" href="book.php?car=Toyota Ford">Book Now</a>
                     </div>
           </div>
 
@@ -73,7 +73,7 @@
                     </p>
                </div>
                <div class="card-footer d-flex justify-content-center">
-                    <a class="btn btn-primary" href="Booking.php?car=Civic">Book Now</a>
+                    <a class="btn btn-primary" href="book.php?car=Civic">Book Now</a>
                </div>
           </div>
 
@@ -98,7 +98,7 @@
                     </p>
                </div>
                <div class="card-footer d-flex justify-content-center">
-                    <a class="btn btn-primary" href="Booking.php?car=Xpander">Book Now</a>
+                    <a class="btn btn-primary" href="book.php?car=Xpander">Book Now</a>
                </div>
           </div>
      </div>

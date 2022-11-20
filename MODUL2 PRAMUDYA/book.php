@@ -44,7 +44,7 @@
           <div class="container d-flex justify-content-center p-4">
                <div class="row">
                     <div class="col-sm-6 mr-3">
-                         <form action="" method="">
+                         <form action="mybook.php" method="GET">
                               <div class="form-group">
                                    <label for="nama">Name</label>
                                    <input type="text" class="form-control" value="Pram_1202200063" name="nama">

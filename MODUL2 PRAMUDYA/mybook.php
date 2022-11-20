@@ -15,7 +15,7 @@
           $nama = $_POST['nama'];
           $checkIn = $_POST['checkin'];
           $duration = $_GET['duration'];
-          $checkOut = "apahayo";
+          $checkOut = "checkout";
           $car = $_POST['car'];
           $Phone = $_POST['nomor'];
 
@@ -37,7 +37,7 @@
 
           if (empty($_POST['service1']) and empty($_POST['service2']) ) :
                $serv1 = "-";
-               $serv2 = "-";
+               $serv2 = "NO Service";
           endif;
 
           if (!empty($_POST['service1']) and !empty($_POST['service2']) ) :
@@ -46,13 +46,13 @@
           endif;
 
           if (empty($_POST['service1']) and !empty($_POST['service2'])):
-               $serv1 = "-";
+               $serv1 = "Driver";
                $servShow = "Driver";
                $total += 100000;
           endif;
 
           if (empty($_POST['service2']) and !empty($_POST['service1'])):
-               $serv2 = "-";
+               $serv2 = "Health Protocol";
                $servShow = "Health Protocol";
                $total += 30000;
           endif;
