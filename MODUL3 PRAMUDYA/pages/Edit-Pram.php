@@ -40,23 +40,23 @@
                   <form>
                     <div>
                       <label style='display: block;font-size: 20px; line-height: 24px; letter-spacing: 1.2px; margin-top: 30px;' for='nama'>Nama Mobil</label>
-                      <input style='display: block; width: 600px; height: 50px; border: 1px solid #757575; border-radius: 8px; margin-top: 20px; padding-left: 10px; padding-right: 10px;' type='text' id='nama' name='nama_mobil' value='" . $detail["nama_mobil"] . "' readonly>
+                      <input style='display: block; width: 600px; height: 50px; border: 1px solid #757575; border-radius: 8px; margin-top: 20px; padding-left: 10px; padding-right: 10px;' type='text' id='nama' name='nama_mobil' value='" . $detail["nama_mobil"] . "' >
                     </div>
                     <div>
                       <label style='display: block;font-size: 20px; line-height: 24px; letter-spacing: 1.2px; margin-top: 30px;' for='pemilik'>Nama Pemilik</label>
-                      <input style='display: block; width: 600px; height: 50px; border: 1px solid #757575; border-radius: 8px; margin-top: 20px; padding-left: 10px; padding-right: 10px;' type='text' id='pemilik' name='nama_pemilik' value='" . $detail["pemilik_mobil"] . "' readonly>
+                      <input style='display: block; width: 600px; height: 50px; border: 1px solid #757575; border-radius: 8px; margin-top: 20px; padding-left: 10px; padding-right: 10px;' type='text' id='pemilik' name='nama_pemilik' value='" . $detail["pemilik_mobil"] . "' >
                     </div>
                     <div>
                       <label style='display: block;font-size: 20px; line-height: 24px; letter-spacing: 1.2px; margin-top: 30px;' for='merk'>Merk</label>
-                      <input style='display: block; width: 600px; height: 50px; border: 1px solid #757575; border-radius: 8px; margin-top: 20px; padding-left: 10px; padding-right: 10px;' type='text' id='merk' name='merk_mobil' value='" . $detail["merk_mobil"] . "' readonly>
+                      <input style='display: block; width: 600px; height: 50px; border: 1px solid #757575; border-radius: 8px; margin-top: 20px; padding-left: 10px; padding-right: 10px;' type='text' id='merk' name='merk_mobil' value='" . $detail["merk_mobil"] . "' >
                     </div>
                     <div>
                       <label style='display: block;font-size: 20px; line-height: 24px; letter-spacing: 1.2px; margin-top: 30px;' for='tanggalbeli'>Tanggal Beli</label>
-                      <input style='display: block; width: 600px; height: 50px; border: 1px solid #757575; border-radius: 8px; margin-top: 20px; padding-left: 10px; padding-right: 10px;' type='date' id='tanggalbeli' name='tanggal_beli' value='" . $detail["tanggal_beli"] . "' readonly>
+                      <input style='display: block; width: 600px; height: 50px; border: 1px solid #757575; border-radius: 8px; margin-top: 20px; padding-left: 10px; padding-right: 10px;' type='date' id='tanggalbeli' name='tanggal_beli' value='" . $detail["tanggal_beli"] . "'>
                     </div>
                     <div>
                       <label style='display: block;font-size: 20px; line-height: 24px; letter-spacing: 1.2px; margin-top: 30px;' for='desc'>Deskripsi</label>
-                      <textarea id='desc' name='deskripsi' style='height:200px; width: 600px; border-radius: 8px; padding: 20px; margin-top: 20px;' readonly> " . $detail["deskripsi"] . " </textarea>
+                      <textarea id='desc' name='deskripsi' style='height:200px; width: 600px; border-radius: 8px; padding: 20px; margin-top: 20px;'> " . $detail["deskripsi"] . " </textarea>
                     </div>
                     <div>
                       <label style='display: block;font-size: 20px; line-height: 24px; letter-spacing: 1.2px; margin-top: 30px;' for='inputGroupFile01'>Foto</label>

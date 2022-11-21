@@ -1,5 +1,5 @@
 <?php
-require '../config/connector.php';
+require 'connector.php';
 
 $nama_mobil = $_POST['nama_mobil'];
 $nama_pemilik = $_POST['nama_pemilik'];
@@ -12,9 +12,9 @@ $foto_mobil = $_FILES['foto_mobil']['name'];
 $path = "../asset/images/";
 
 if (move_uploaded_file($_FILES['foto_mobil']['tmp_name'], $path . $foto_mobil)) {
-  $addquery = "INSERT INTO showroom_pram_tabel (nama_mobil, pemilik_mobil, merk_mobil, tanggal_beli, deskripsi, foto_mobil, status_pembayaran) VALUES ('$nama_mobil', '$nama_pemilik', '$merk_mobil', '$tanggal_beli', '$deskripsi', '$foto_mobil', '$status_bayar')";
+  $addquery = "INSERT INTO showroom_pram_tabel (id_mobil, nama_mobil, pemilik_mobil, merk_mobil, tanggal_beli, deskripsi, foto_mobil, status_pembayaran) VALUES (' ', '$nama_mobil', '$nama_pemilik', '$merk_mobil', '$tanggal_beli', '$deskripsi', '$foto_mobil', '$status_bayar')";
   if (mysqli_query($connector, $addquery)) {
-    header("location: ../pages/listcar-pram.php?pesan=succes");
+    header("location: ../pages/listcar-Pram.php?pesan=succes");
   } else {
     header("location: ../pages/listcar-pram.php?pesan=failed");
   }

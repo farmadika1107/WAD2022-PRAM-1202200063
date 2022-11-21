@@ -1,5 +1,5 @@
 <?php
-require './connector.php';
+require 'connector.php';
 
 $id = $_GET['id'];
 $nama_mobil = $_POST['nama_mobil'];
@@ -15,7 +15,7 @@ $path = "../asset/images/";
 if ("SELECT foto_mobil FROM showroom_pram_tabel WHERE id_mobil = $id" < 0) {
   if (move_uploaded_file($_FILES['foto_mobil']['tmp_name'], $path . $foto_mobil)) {
     $editquery = "UPDATE showroom_pram_tabel SET nama_mobil = '$nama_mobil', pemilik_mobil = '$nama_pemilik', merk_mobil = '$merk_mobil', tanggal_beli = '$tanggal_beli', deskripsi = '$deskripsi', foto_mobil = '$foto_mobil', status_pembayaran = '$status_bayar' WHERE id_mobil = $id";
-    if (mysqli_query($conn, $editquery)) {
+    if (mysqli_query($connector, $editquery)) {
       header("location: ../pages/ListCar-Pram.php?pesan=update");
     } else {
       header("location: ../pages/ListCar-Pram.php?pesan=failed");
@@ -25,7 +25,7 @@ if ("SELECT foto_mobil FROM showroom_pram_tabel WHERE id_mobil = $id" < 0) {
   }
 } else {
   $editquery = "UPDATE showroom_pram_tabel SET nama_mobil = '$nama_mobil', pemilik_mobil = '$nama_pemilik', merk_mobil = '$merk_mobil', tanggal_beli = '$tanggal_beli', deskripsi = '$deskripsi', status_pembayaran = '$status_bayar' WHERE id_mobil = $id";
-  if (mysqli_query($conn, $editquery)) {
+  if (mysqli_query($connector, $editquery)) {
     header("location: ../pages/ListCar-Pram.php?pesan=update");
   } else {
     header("location: ../pages/ListCar-Pram.php?pesan=failed");
