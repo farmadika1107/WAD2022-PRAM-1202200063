@@ -13,7 +13,7 @@
     <div class="container">
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav gap-3">
-          <a class="nav-link" style="color: #e0e0e0; font-weight: 600;" href="../index.php">Home</a>
+          <a class="nav-link" style="color: #e0e0e0; font-weight: 600;" href="./Home-Pram.php">Home</a>
           <a class="nav-link" style="color: white;" href="#">MyCar</a>
         </div>
       </div>

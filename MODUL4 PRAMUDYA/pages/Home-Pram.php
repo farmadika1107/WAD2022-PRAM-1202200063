@@ -11,10 +11,10 @@
 
 <body>
     <?php
-  require './config/connector.php';
+  require '../config/connector.php';
 
   $query = "SELECT * FROM showroom_pram_tabel";
-  $result = mysqli_query($connector, $query);
+  $result = mysqli_query($conn, $query);
 
   ?>
     <nav class="navbar navbar-expand-lg bg-primary">
@@ -23,9 +23,9 @@
                 <div class="navbar-nav gap-3">
                     <a class="nav-link" style="color: white;" href="#home">Home</a>
                     <a class="nav-link" style="color: #e0e0e0; font-weight: 600;" href="<?php if (mysqli_num_rows($result) > 0) {
-                                                                                echo "./pages/Listcar-Pram.php";
+                                                                                echo "./Listcar-Pram.php";
                                                                               } else {
-                                                                                echo "./pages/Add-Pram.php";
+                                                                                echo "./Add-Pram.php";
                                                                               } ?>">MyCar</a>
                 </div>
             </div>
@@ -41,9 +41,9 @@
                     <p style="font-style: normal; font-weight: 400; font-size: 20px; line-height: 23px; letter-spacing: 0.2px;"
                         class="mt-3">.</p>
                     <a href="<?php if (mysqli_num_rows($result) > 0) {
-                      echo "./pages/Listcar-Pram.php";
+                      echo "./Listcar-Pram.php";
                     } else {
-                      echo "./pages/Add-Pram.php";
+                      echo "./Add-Pram.php";
                     } ?>"
                         style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 10px; width: 137px; height: 51px; background: #3563e9; border-radius: 5px; border: none; color: white; margin-top: 40px; text-decoration: none;"
                         class="button btn-primary">MyCar</a>

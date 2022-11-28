@@ -1,6 +1,6 @@
 <?php
-$connector = new mysqli("127.0.0.1". ":" . "3307", "root", "", "modul3");
+$conn = new mysqli("127.0.0.1". ":" . "3306", "root", "", "client_project_pramudaya");
 
-if (!$connector) {
-  die("Koneksi Error: " . $connector->connect_error);
+if (!$conn) {
+  die("Koneksi Error: " . $conn->connect_error);
 }

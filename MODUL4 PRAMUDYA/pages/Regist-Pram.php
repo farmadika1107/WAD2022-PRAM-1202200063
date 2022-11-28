@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Login</title>
+  <title>Registrasi</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 
@@ -18,37 +18,37 @@
 
         <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
 
-          <form style="width: 23rem;">
+          <form style="width: 23rem;" method="post" action="../config/regist.php">
 
             <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;"><b>Register</b></h3>
 
             <div class="form-outline mb-4">
-              <input type="email" id="form2Example18" class="form-control form-control-lg" />
+              <input type="email" name="email" id="form2Example18" class="form-control form-control-lg" />
               <label class="form-label" for="form2Example18">Email</label>
             </div>
 
             <div class="form-outline mb-4">
-              <input type="nama" id="form2Example18" class="form-control form-control-lg" />
+              <input type="text" name="nama" id="form2Example18" class="form-control form-control-lg" />
               <label class="form-label" for="form2Example18">Nama</label>
             </div>
 
             <div class="form-outline mb-4">
-              <input type="nohp" id="form2Example18" class="form-control form-control-lg" />
+              <input type="text" name="nohp" id="form2Example18" class="form-control form-control-lg" />
               <label class="form-label" for="form2Example18">No Handphone*</label>
             </div>
 
             <div class="form-outline mb-4">
-              <input type="password" id="form2Example28" class="form-control form-control-lg" />
+              <input type="password" name="password" id="form2Example28" class="form-control form-control-lg" />
               <label class="form-label" for="form2Example28">Kata Sandi*</label>
             </div>
 
             <div class="form-outline mb-4">
-              <input type="password2" id="form2Example28" class="form-control form-control-lg" />
+              <input type="password" name="password2" id="form2Example28" class="form-control form-control-lg" />
               <label class="form-label" for="form2Example28">Konfirmasi Kata Sandi*</label>
             </div>
 
             <div class="pt-1 mb-4">
-              <button class="btn btn-info btn-lg btn-block" type="button">Daftar</button>
+              <button class="btn btn-info btn-lg btn-block" name="submit" type="submit">Daftar</button>
             </div>
 
 
@@ -70,4 +70,3 @@
 </body>
 
 </html>
-Login Modal
